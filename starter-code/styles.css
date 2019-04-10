@@ -1,14 +1,66 @@
-/* @import url('https://fonts.googleapis.com/css?family=Roboto:300,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,700');
 
 * {
   margin: 0;
   padding: 0;
 }
 
+:root {
+  --red: #c12127;
+  --blue: #225f7e;
+  --dark-blue: #263547;
+  --text-red: #ed575a;
+  --text-orange: #f19230;
+  --text-blue: #34495d;
+  --text-gray: #545861;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
 }
 
-*/
+/* Navbar */
 
+.top-left {
+}
 
+.heart {
+}
+
+.acronym {
+}
+
+.top-links {
+}
+
+/* Header */
+
+#header {
+}
+
+.npm-logo {
+}
+
+.search-package {
+}
+
+.login-signup {
+}
+
+/* Section 1 */
+
+#orgs {
+}
+
+/* Section 2 */
+
+#general-info {
+}
+
+/* Section 3 */
+
+#build {
+}
+
+.features {
+}

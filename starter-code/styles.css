@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
 
 * {
   margin: 0;
@@ -7,18 +7,64 @@
 
 :root {
   --red: #c12127;
-  --blue: #225f7e;
+  --blue: #21597a;
   --dark-blue: #263547;
-  --text-red: #ed575a;
-  --text-orange: #f19230;
-  --text-blue: #34495d;
-  --text-gray: #545861;
+  --orange: #f19230;
+  --dark-orange: #e2862a;
+  --light-red: #ed575a;
+  --gray-blue: #34495d;
+  --gray: #545861;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
+  font-size: 18px;
 }
+
+h1 {
+  font-weight: 300;
+  font-size: 3em;
+}
+
+p {
+  line-height: 1.25;
+}
+
+/* General */
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+input {
+  font-size: 1em;
+}
+
+.button {
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 1.1em;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* Columns
+
+col {
+  box-sizing: border-box;
+}
+
+.col-3 {
+  width: 33%;
+}
+
+.col-2 {
+  width: 50%;
+} */
 
 /* Navbar */
 
@@ -61,15 +107,100 @@ body {
 /* Header */
 
 #header {
+  background-color: var(--blue);
+  background-image: url('images/city-scape.svg');
+  color: white;
+}
+
+.build {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  width: 95%;
+  margin: 0 auto;
 }
 
 .npm-logo {
+  width: 150px;
+  height: auto;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
 }
 
-.search-package {
+.npm-logo img {
+  width: 100%;
 }
+
+.search-bar {
+  display: flex;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.search-input,
+.search-button {
+  border: 1.5px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 12px;
+}
+
+.search-input {
+  width: 100%;
+  color: white;
+}
+
+.search-button {
+  color: white;
+  padding: 15px 15px 12px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  }
 
 .login-signup {
+  display: flex;
+  align-items: center;
+}
+
+.login-signup li {
+  list-style: none;
+  padding-left: 12px;
+  white-space: nowrap;
+}
+
+.login-signup a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+}
+
+.login-signup a:hover {
+  color: white;
+}
+
+.login-signup img {
+  width: 35px;
+  margin-top: 5px;
+}
+
+.build-content {
+  padding: 75px 0;
+}
+
+.build-content p {
+  width: 55%;
+  margin: 30px 0;
+}
+
+.build-content .button {
+  background-color: var(--orange);
+  margin: 10px 0;
+}
+
+.build-content .button:hover {
+  background-color: var(--dark-orange);
 }
 
 /* Section 1 */
@@ -78,14 +209,15 @@ body {
 }
 
 /* Section 2 */
+/* <img src="images/forklift.svg" alt="npm Logo" /> */
 
 #general-info {
 }
 
 /* Section 3 */
 
-#build {
+#features {
 }
 
-.features {
+.feature {
 }

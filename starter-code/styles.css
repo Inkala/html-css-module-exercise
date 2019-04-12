@@ -10,32 +10,46 @@
   --blue: #263547;
   --orange: #f19230;
   --hover-orange: #e2862a;
-  --light-red: #CC3738;
+  --light-red: #cc3738;
   --pink: #f05757;
   --hover-red: #db4042;
   --gray-blue: #34495d;
   --gray: #545861;
+  --light-gray: #8a8a8a;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 18px;
+  color: var(--gray);
 }
 
-h1, h2, h3 {
+h1,
+h2 {
   font-weight: 300;
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 3em;
 }
 
 h2 {
   font-size: 2em;
 }
 
-p, li {
+h3 {
+  font-weight: 700;
+  font-size: 1.35em;
+  margin: 20px 0;
+}
+
+h4 {
+  margin: 10px 0;
+}
+
+p,
+li {
   line-height: 1.25;
 }
 
@@ -67,14 +81,6 @@ input {
 }
 
 /* Columns */
-
-col {
-  box-sizing: border-box;
-}
-
-.col-3 {
-  width: 33%;
-}
 
 .col-sm {
   width: 40%;
@@ -174,7 +180,7 @@ col {
 
 .search-button:hover {
   background-color: rgba(255, 255, 255, 0.05);
-  }
+}
 
 .login-signup {
   display: flex;
@@ -278,8 +284,37 @@ col {
 
 /* Section 3 */
 
-#features {
+#blocks {
+  text-align: center;
+  margin: 65px 0 50px;
+}
+
+#blocks .container {
+  width: 85%;
+}
+
+.blocks-description {
+  margin: 0 65px;
+}
+
+.features {
+  display: flex;
+  margin-top: 55px;
+}
+
+.center-feature {
+  padding: 0 45px;
 }
 
 .feature {
+  width: 33%;
+}
+
+.feature p {
+  color: var(--light-gray);
+}
+
+.feature a {
+  color: var(--light-red);
+  text-decoration: none;
 }

@@ -7,8 +7,7 @@
 
 :root {
   --red: #c12127;
-  --blue: #21597a;
-  --dark-blue: #263547;
+  --blue: #263547;
   --orange: #f19230;
   --hover-orange: #e2862a;
   --light-red: #CC3738;
@@ -64,7 +63,7 @@ input {
 
 .dark {
   color: white;
-  background-color: var(--dark-blue);
+  background-color: var(--blue);
 }
 
 /* Columns */
@@ -126,9 +125,7 @@ col {
 /* Header */
 
 #header {
-  background-color: var(--blue);
   background-image: url('images/city-scape.svg');
-  /* color: white; */
 }
 
 .build {
@@ -253,10 +250,30 @@ col {
   text-decoration: none;
 }
 
-/* Section 2 */
-/* <img src="images/forklift.svg" alt="npm Logo" /> */
+.learn-more a:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
 
+/* Section 2 */
 #general-info {
+  background-image: url('images/forklift.svg');
+  height: 450px;
+}
+
+#general-info .button {
+  background-color: var(--gray-blue);
+}
+
+#general-info .button:hover {
+  background-color: var(--blue);
+}
+
+.general-info-content {
+  padding-top: 85px;
+}
+
+.general-info-content p {
+  margin: 25px 0;
 }
 
 /* Section 3 */

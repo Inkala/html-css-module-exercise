@@ -27,13 +27,17 @@
         <li><a href="#">support</a></li>
       </ul>
     </nav>
-    <header id="header">
+    <header id="header" class="dark">
       <section class="build">
         <div class="npm-logo">
           <img src="images/npm-logo.png" alt="npm Logo" />
         </div>
         <div class="search-bar">
-          <input type="search" placeholder="Find packages" class="search-input" />
+          <input
+            type="search"
+            placeholder="Find packages"
+            class="search-input"
+          />
           <button class="search-button"><i class="fas fa-search"></i></button>
         </div>
         <ul class="login-signup">
@@ -43,7 +47,7 @@
       </section>
       <section class="build-content container">
         <h1>Build amazing things</h1>
-        <p>
+        <p class="col-lg">
           npm is the package manager for JavaScript and the world's largest
           software registry. Discover packages of reusable code – and assemble
           then in powerful new ways.
@@ -51,16 +55,25 @@
         <a href="#" class="button">Sign up for npm</a>
       </section>
     </header>
-    <section id="orgs" class="container">
-      <img src="images/collaboration.svg" alt="" />
-      <h1>npm Orgs is powerful collaboration – for free</h1>
-      <ul>
-        <li>Encourage code discovery and re-use within teams</li>
-        <li>Publish and control access to your own namespace</li>
-        <li>Manage public and private code with the same workflow</li>
-      </ul>
-      <button>Sign up for Orgs</button>
-      <p>or <a href="#">Learn more about Orgs</a></p>
+    <section id="orgs" class="dark">
+      <div class="container orgs-content">
+        <img src="images/collaboration.svg" alt="" class="orgs-image col-sm" />
+        <div class="col-lg">
+          <h2>npm Orgs is powerful collaboration – for free</h2>
+          <ul class="orgs-list">
+            <li>Encourage code discovery and re-use within teams</li>
+            <li>Publish and control access to your own namespace</li>
+            <li>Manage public and private code with the same workflow</li>
+          </ul>
+          <button class="button">Sign up for Orgs</button>
+          <p class="learn-more">
+            or
+            <a href="#">
+              Learn more about Orgs
+            </a>
+          </p>
+        </div>
+      </div>
     </section>
     <section id="general-info" class="container">
       <h1>What is npm?</h1>
@@ -78,7 +91,7 @@
       </p>
       <div class="feature">
         <img src="images/binoculars.svg" alt="" />
-        <h2>Find</h2>
+        <h3>Find</h3>
         <p>
           Libraries like jQuery, Bootstrap, React, and Angular, and components
           from frameworks such as Ember
@@ -86,7 +99,7 @@
       </div>
       <div class="feature">
         <img src="images/mountain-flag.svg" alt="" />
-        <h2>Discover</h2>
+        <h3>Discover</h3>
         <p>
           Packages for movile, IoT, front end, back end, robotics... everything
           you need to start building amazing things.
@@ -94,7 +107,7 @@
       </div>
       <div class="feature">
         <img src="images/backpack.svg" alt="" />
-        <h2>Build</h2>
+        <h3>Build</h3>
         <p>
           Assemble packages like building blocks to quickly develop awesome new
           projects.
